@@ -1,12 +1,12 @@
 FROM openjdk:17
 
-COPY target/app.jar  /usr/app/app.jar
+COPY target/start-0.0.1-SNAPSHOT.jar  /usr/app/
 
 WORKDIR /usr/app
 
 EXPOSE 8080
 
-ENTRYPOINT ["java" , "-jar" , "app.jar"]
+ENTRYPOINT ["java" , "-jar" , "start-0.0.1-SNAPSHOT.jar"]
 
 
  
